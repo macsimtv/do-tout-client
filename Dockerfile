@@ -2,6 +2,8 @@ FROM node:16-alpine as build
 
 WORKDIR /app
 
+ARG VITE_API_URL=${VITE_API_URL}
+
 COPY ./package*.json ./
 RUN npm install
 
