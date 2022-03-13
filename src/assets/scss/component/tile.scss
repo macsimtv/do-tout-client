@@ -1,0 +1,70 @@
+.tile {
+    position: relative;
+
+    border-radius: 5px;
+
+    background-color: $white;
+
+    cursor: grab;
+
+    &__container {
+        padding: 10px;
+    }
+
+    &__name {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    &__date {
+        color: $color;
+
+        font-size: 0.8rem;
+
+        text-align: right;
+    }
+
+    &__menu {
+        padding: 0 10px;
+        
+        position: absolute;
+        z-index: 11;
+        top: 0;
+        right: 0;
+
+        opacity: 0;
+        pointer-events: none;
+
+        transition: opacity 0.2s ease-in-out;
+
+        svg {
+            width: 100%;
+        }
+    }
+
+    &:hover &__menu {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    &__trash {
+        width: 30px;
+        height: 30px;
+
+        padding: 2px;
+
+        background-color: $white;
+
+        border-radius: 4px;
+
+        transform: translateY(-50%);
+
+        box-shadow: 0px 0px 20px rgba(204, 204, 204, 0.5);
+
+        cursor: pointer;
+
+        svg {
+            stroke: rgb(187, 21, 21);
+        }
+    }
+}

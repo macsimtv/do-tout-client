@@ -1,0 +1,47 @@
+.message-box {
+    width: fit-content;
+    max-width: 80vw;
+    min-width: 400px;
+
+    margin: 20px;
+    padding: 10px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background-color: #E9F6ED;
+
+    border: 1px solid #36BE6B;
+    border-radius: 7px;
+
+    &__container {
+        display: flex;
+        align-items: center;
+
+        gap: 10px;
+    }
+
+    &__icon {
+        width: 40px;
+        height: 40px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 4px;
+
+        background-color: #36BE6B;
+
+        border-radius: 10px;
+
+        svg {
+            stroke: $white;
+        }
+    }
+
+    &__text {
+        color: $color;
+    }
+}
